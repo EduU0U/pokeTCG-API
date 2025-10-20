@@ -11,7 +11,7 @@ searchBtn.addEventListener("click", () => {
     showFeedback("Digite o nome de um Pokémon para buscar.");
     return;
   }
-  showFeedback("🔍 Buscando cartas...");
+  showFeedback("🔍 Buscando cartas....");
   fetch(`${API_URL}/cards?q=name:${name}`)
     .then(res => res.json())
     .then(data => {
