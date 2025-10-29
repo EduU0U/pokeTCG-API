@@ -16,6 +16,7 @@
     <section class="search-box">
       <input type="text" id="searchInput" placeholder="Digite o nome de um Pokémon (ex: Charizard)">
       <button id="searchBtn">Buscar</button>
+      <button id="logsBtn">Ver Logs</button>
     </section>
 
     <section id="feedback" class="feedback"></section>
@@ -30,6 +31,15 @@
   <footer>
     <p>© 2025 — Trabalho acadêmico | API: Pokémon TCG</p>
   </footer>
+
+ 
+  <div id="logsModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Logs Registrados</h2>
+      <ul id="logsList"></ul>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
